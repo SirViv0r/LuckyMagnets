@@ -1,3 +1,6 @@
+% add relevant subfolders to path
+addpath("algorithms/")
+
 
 % geometrical parameters
 L = 20;     % lattice size
