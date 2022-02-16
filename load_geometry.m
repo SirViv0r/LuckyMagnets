@@ -1,5 +1,5 @@
 function neighbors = load_geometry(L, dim)
-    %input:  lattice size L, spatial dimension dim
+    %input:  lattice size L (square, cube, ... lattice), spatial dimension dim
     %output: matrix neighbors, neighbors(i) is an array with all nearest
     %neighbors of lattice site i
 
@@ -9,7 +9,7 @@ function neighbors = load_geometry(L, dim)
 
         for i= 1:L
             neighbors(i) = lex(mod(i,L)+1);
-            neighbors(i) = lex(mod(i-2,L)+1;
+            neighbors(i) = lex(mod(i-2,L)+1);
         end
     elseif dim==2
         lex = zeros(L,L);
